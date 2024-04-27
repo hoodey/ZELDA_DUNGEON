@@ -7,7 +7,7 @@ public class SpawnPrefab : MonoBehaviour
 
     public GameObject myPrefab;
     public GameObject myParent;
-    public Vector3 myPosition;
+    public string myPrefabName;
     GameObject currentWalls;
 
     // Start is called before the first frame update
@@ -24,10 +24,10 @@ public class SpawnPrefab : MonoBehaviour
 
     public void Spawn()
     {
-        currentWalls = GameObject.Find("DoorHolder");
-        if (currentWalls = null)
+        currentWalls = GameObject.Find(myPrefabName);
+        if (currentWalls == null)
         {
-            currentWalls = GameObject.Find("DoorHolder(Clone)");
+            currentWalls = GameObject.Find(myPrefabName + "(Clone)");
         }
         
         if (currentWalls != null)
