@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PiratesCove.unity
     guid: 950e6f456b9971840aaed802e1ace27d
+  - enabled: 1
+    path: Assets/Scenes/TestAudio.unity
+    guid: ba77c529c29147a4fad1a965fe107eb7
   m_configObjects: {}
